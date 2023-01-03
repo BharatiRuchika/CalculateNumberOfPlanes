@@ -3,7 +3,7 @@ function calculatePlanes(arr) {
     var i = 0;
     while (i != arr.length - 1) {
         console.log("element", arr[i])
-        if (arr[i] == 0) {
+        if (arr[0] == 0) {
             return -1;
         }
         if (arr[i] > 0) {
@@ -37,7 +37,9 @@ function calculatePlanes(arr) {
     }
     return plane;
 }
-var arr = [1,1,2,3,4]
+// var arr = [1,1,2,3,4]
+// var arr = [1,6,3,4,5,0,0,0,6]
+var arr = [2,1,0,3,1,2]
 var plane = calculatePlanes(arr);
 console.log("plane", plane);
 
